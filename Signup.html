@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
     <link rel="stylesheet" href="Signup.css">
-    <script defer src="Signup.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+     <script src="Signup.js"></script>
 </head>
 
 <body>
     <div class="main">
-        <div id="error"></div>
-        <form action="/" method="post">
+        <form id="SignupForm" action="/" method="post" >
             <div class=".col-1">
                 <h2 style="color: rgb(204, 201, 189);margin-left: 140px;"> REGISTER </h2>
 
@@ -21,7 +21,9 @@
                 <input type="text" class="box1" name="name" id="names" placeholder="Name" >
 
 
-                <input type="text" class="box1" name="" id="" placeholder="Email">
+                <input type="text" class="box1" name="" id="" placeholder="Email" >
+
+
                 <input type="text" class="box1" name="phone" id="phone" placeholder="Mobile">
                 <input type="text" class="box1" name="password" id="password" placeholder="Password">
                 <input type="text" class="box1" name="con" id="" placeholder="Confirm Password"><br>
