@@ -7,34 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
     <link rel="stylesheet" href="Signup.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-     <script src="Signup.js"></script>
+    
 </head>
 
 <body>
     <div class="main">
-        <form id="SignupForm" action="/" method="post" >
+        <form id="SignupForm">
             <div class=".col-1">
-                <h2 style="color: rgb(204, 201, 189);margin-left: 140px;"> REGISTER </h2>
+                <h2 style="color: rgb(204, 201, 189);margin-left: 140px;"> REGISTER </h2><br>
 
-
-                <input type="text" class="box1" name="name" id="names" placeholder="Name" >
-
-
-                <input type="text" class="box1" name="" id="" placeholder="Email" >
-
-
-                <input type="text" class="box1" name="phone" id="phone" placeholder="Mobile">
-                <input type="text" class="box1" name="password" id="password" placeholder="Password">
-                <input type="text" class="box1" name="con" id="" placeholder="Confirm Password"><br>
-                <button class="btn" type="submit">
+               <input type="text" class="box1" name="name" id="names" placeholder="Name" required>
+                <input type="text" class="box1" name="email" id="" placeholder="Email" required><br>
+                <input type="text" class="box1" name="phone" id="phone" placeholder="Mobile" required><br>
+                <input type="password" class="box1" name="password" id="password" placeholder="Password" required><br>
+                <input type="password" class="box1" name="con" id="" placeholder="Confirm Password" required><br>
+                <button class="btn" type="submit" >
                     SignUp
                 </button>
-
-
-                </table>
             </div>
+             
         </form>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+        <script src="Signup.js"></script>
     </div>
 </body>
 

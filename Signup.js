@@ -1,8 +1,15 @@
+$("#SignupForm").validate({
+    errorPlacement: function(error, element) {         
+         element.before(error);
+    }
+  });
 
-$().ready(function(){
-    $("#signupForm").validate({
+
+
+$(function(){
+    $("#SignupForm").validate({
         rules:{
-            names:{
+            name:{
             required:true, 
             minlength: 5
             },
@@ -10,7 +17,7 @@ $().ready(function(){
                 required:true,
                 email:true
             },
-            mobile: {
+            phone: {
                 required: true,
                 mobile:true
             },
@@ -18,14 +25,14 @@ $().ready(function(){
                 required: true,
                 minlength:5
             },
-            confirm_password: {
+            con: {
                 required: true,
                 equalTo: "#password"
             }
 
         },
         messages: {
-            names: {
+            name: {
                 required:" Please Enter your Full Name",
                 minlength: "Minimum length is 5"
             },
@@ -33,7 +40,7 @@ $().ready(function(){
                 required: "Please enter an email address",
                 email: "Please enter a valid email"
             },
-            mobile: {
+            phone: {
                 required: "Please Enter a phone number",
                 mobile:"Please enter a valid phone number"
             },
@@ -41,7 +48,7 @@ $().ready(function(){
                 required: "Please enter a password",
                 minlength: "Minimum length is 5"
             },
-            confirm_password: {
+            con: {
                 required: "Please enter a password",
                 equalTo: "Please enter same password as above"
             }
