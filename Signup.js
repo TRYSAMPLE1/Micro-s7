@@ -1,10 +1,3 @@
-$("#SignupForm").validate({
-    errorPlacement: function(error, element) {         
-         element.before(error);
-    }
-  });
-
-
 
 $(function(){
     $("#SignupForm").validate({
